@@ -33,7 +33,7 @@ public class Shoot : MonoBehaviour
 
         //Debug.Log(aimValue);
         int angleNew = ((((int)(aimValue + offset)) / 45))*45;
-        Debug.Log(angleNew);
+        //Debug.Log(angleNew);
 
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angleNew));
 
