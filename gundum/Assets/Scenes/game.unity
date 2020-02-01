@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 113231088}
   m_Layer: 0
   m_Name: markers
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 402657903}
   m_Layer: 0
   m_Name: markers
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -554,6 +554,7 @@ GameObject:
   - component: {fileID: 1045544073}
   - component: {fileID: 1045544072}
   - component: {fileID: 1045544077}
+  - component: {fileID: 1045544078}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -574,7 +575,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
-  maxVelocity: 10
+  maxVelocity: 8
+  gunScript: {fileID: 1177422496}
 --- !u!50 &1045544073
 Rigidbody2D:
   serializedVersion: 4
@@ -613,14 +615,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 11.52, y: 6.48}
+    oldSize: {x: 0.13, y: 0.22}
+    newSize: {x: 0.13, y: 0.22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.13, y: 0.22}
   m_EdgeRadius: 0
 --- !u!212 &1045544075
 SpriteRenderer:
@@ -660,12 +662,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 721ee5f1209ecac42a1bacdb5cf826c8, type: 3}
+  m_Sprite: {fileID: 1868417282287260892, guid: 0875e9846c614c142a823895d459b721,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 11.52, y: 6.48}
+  m_Size: {x: 0.13, y: 0.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -679,8 +682,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045544071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.69, z: 0}
+  m_LocalScale: {x: -5, y: 5, z: 5}
   m_Children:
   - {fileID: 1177422494}
   m_Father: {fileID: 0}
@@ -701,6 +704,25 @@ MonoBehaviour:
   jumpForce: 10
   doubleJumpScale: 1.1
   canDoubleJump: 1
+--- !u!95 &1045544078
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045544071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 856e71192a650244d8e3ed5934576e25, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1099221254
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +736,7 @@ GameObject:
   - component: {fileID: 1099221255}
   m_Layer: 0
   m_Name: markers
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -821,7 +843,7 @@ GameObject:
   - component: {fileID: 1099777552}
   m_Layer: 0
   m_Name: markers
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -941,8 +963,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177422493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.33, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.5}
+  m_LocalPosition: {x: 0.0573, y: -0.042, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.5}
   m_Children:
   - {fileID: 1814205396}
   m_Father: {fileID: 1045544076}
@@ -1012,6 +1034,7 @@ MonoBehaviour:
   muzzle: {fileID: 1814205396}
   bulletPrefab: {fileID: 6952069017403250595, guid: 3cb5a757c5af95d438324c08fe93ead2,
     type: 3}
+  fireRate: 0.2
 --- !u!1 &1386021783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,7 +1185,7 @@ GameObject:
   - component: {fileID: 1862099993}
   m_Layer: 0
   m_Name: markers
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

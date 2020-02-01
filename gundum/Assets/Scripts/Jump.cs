@@ -46,7 +46,7 @@ public class Jump : MonoBehaviour
                 if (doubleJump)
                 {
                     doubleJump = false;
-                    rb.velocity = jumpVec * doubleJumpScale;
+                    rb.velocity += jumpVec * doubleJumpScale;
                 }
             }
         }
