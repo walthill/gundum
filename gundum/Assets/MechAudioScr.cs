@@ -6,13 +6,17 @@ public class MechAudioScr : MonoBehaviour
 {
     //[SerializeField]
     public List<AudioClip> DamageSounds;
-    [SerializeField]
+    //[SerializeField]
     List<AudioSource> DMGS;
+    [SerializeField]
+    List<AudioClip> WarningSounds;//impact incomming,system fail, breach
+    List<AudioSource> WSS;
     // Start is called before the first frame update
     void Start()
     {
-        //DMGS = new List<AudioSource>();
-        foreach(AudioClip c in DamageSounds)
+        DMGS = new List<AudioSource>();
+        WSS = new List<AudioSource>();
+        foreach (AudioClip c in DamageSounds)
         {
             Debug.Log(c.name);
             AudioSource s;
@@ -21,11 +25,21 @@ public class MechAudioScr : MonoBehaviour
             DMGS.Add(s);
             s.clip = c;
         }
+        foreach(AudioClip c in WarningSounds)
+        {
+            AudioSource s = gameObject.AddComponent<AudioSource>();
+            s.clip = c;
+            WSS.Add(s);
+        }
         
     }
 
     public void DamageSound(int DMGSoundINDEX)
     {
         DMGS[DMGSoundINDEX].Play();
+    }
+    public void PlayWarningSound(int soundIndex)
+    {
+        WSS[soundIndex].Play();
     }
 }

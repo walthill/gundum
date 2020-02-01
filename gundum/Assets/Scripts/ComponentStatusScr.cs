@@ -8,6 +8,7 @@ public class ComponentStatusScr : MonoBehaviour
     public static ComponentStatusScr COMPONENT_STATUS;
     EnemyHealthScr EHS;
     MechAudioScr MAS;
+    ShakeCamera SHAKE;
     [SerializeField]
     List<Slider> compSliders;
     //Slider core, shield, weaponSys;
@@ -29,9 +30,11 @@ public class ComponentStatusScr : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Camera.main
         COMPONENT_STATUS = this;
         EHS = GetComponent<EnemyHealthScr>();
         MAS = GetComponent<MechAudioScr>();
+        SHAKE = Camera.main?.GetComponent<ShakeCamera>();
         //StartCoroutine(damageWait(timeBetweenDiceRolls));
         countDown = timeBetweenDiceRolls;
         //CountDownText
@@ -69,15 +72,23 @@ public class ComponentStatusScr : MonoBehaviour
         int ranDmg = Random.Range(0, 49);
         //TODO MAKE A CHECK TO SEE IF THE TARGET IS STILL ALIVE
 
-        if (ranTarget != compSliders.Count)
+        if (compSliders[ranTarget].value > 0)
         {
-            DoDMG(ranTarget, ranDmg);
-            Debug.Log("there was damage");
+            if (ranTarget != compSliders.Count)
+            {
+                DoDMG(ranTarget, ranDmg);
+                Debug.Log("there was damage");
+            }
+            else
+            {
+                Debug.Log("no damage");
+            }
         }
         else
         {
-            Debug.Log("no damage");
+            RollDice();
         }
+        
 
 
     }
@@ -91,18 +102,21 @@ public class ComponentStatusScr : MonoBehaviour
         {
             DMG = MidDMG;
             MAS.DamageSound(1);
+            SHAKE?.AddTrauma(.5f, .3f);
             //med damng
         }
         if (DMG_severity >= 24 && DMG_severity < 44)
         {
             DMG = MinDMG;
             MAS.DamageSound(0);
+            SHAKE?.AddTrauma(.2f, .1f);
             //minDMG
         }
         if(DMG_severity>=44)
         {
             MAS.DamageSound(2);
             DMG = MaxDMG;
+            SHAKE?.AddTrauma(2f, .8f);
             //maxDMg
         }
 
@@ -132,12 +146,14 @@ public class ComponentStatusScr : MonoBehaviour
     {
         if (compSliders[sliderIndex].value <= 0)
         {
+            MAS.PlayWarningSound(1);
             SysFailWarnings[sliderIndex].SetActive(true);
             StartCoroutine(waitToMakeGameobject(5, SysFailWarnings[sliderIndex]));
         }
         //if core is critical
         if (compSliders[0].value < 40)
         {
+            MAS.PlayWarningSound(0);
             StartCoroutine(waitToMakeGameobject(5, SysFailWarnings[3]));
         }
     }
