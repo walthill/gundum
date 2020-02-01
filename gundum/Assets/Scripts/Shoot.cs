@@ -9,7 +9,8 @@ public class Shoot : MonoBehaviour
     ShakeCamera SHAKE;
     [SerializeField] Transform muzzle;
     [SerializeField] GameObject bulletPrefab;
-    [SerializeField] float fireRate = 0.2f;
+    [SerializeField] float fireRate = 0.2f, reloadTime = 0.45f;
+    [SerializeField] int shotsPerClip = 6;
     [SerializeField]
     GameObject muzzleFlash;
 
@@ -18,10 +19,13 @@ public class Shoot : MonoBehaviour
     bool canFire;
     private float offset = 90;
     Vector3 bulletDirection;
+    private int shotsLeft;
+    private bool reloading;
 
     private void Awake()
     {
         bulletDirection = -muzzle.right;
+        shotsLeft = shotsPerClip;
         PAS = GetComponentInParent<playerAudioScr>();
         SHAKE = Camera.main.GetComponent<ShakeCamera>();
     }
@@ -56,8 +60,10 @@ public class Shoot : MonoBehaviour
     {
         if (shoot == 1)
         {
-            if (canFire)
+            if (canFire && shotsLeft > 0)
             {
+                reloading = false;
+                shotsLeft--;
                 canFire = false;
 
                 GameObject bullet = Instantiate(bulletPrefab, muzzle.position, muzzle.rotation) as GameObject;
@@ -73,6 +79,18 @@ public class Shoot : MonoBehaviour
         }
         else if (shoot <= fireRate)
             canFire = true;
+
+        if (shotsLeft <= 0 && !reloading)
+        {
+            StartCoroutine(ReloadRoutine(reloadTime));
+        }
+    }
+
+    IEnumerator ReloadRoutine(float cooldownTime)
+    {
+        reloading = true;
+        yield return new WaitForSeconds(cooldownTime);
+        shotsLeft = shotsPerClip;
     }
 
     void CheckInput()
@@ -81,7 +99,6 @@ public class Shoot : MonoBehaviour
         aimDirectionX = Input.GetAxis("RightStickX");
         aimDirectionY = Input.GetAxis("RightStickY");
     }
-
 
     IEnumerator waitToMakeFlashDisapear(float waitTime)
     {

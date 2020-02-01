@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275795904835663292}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chase Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,10 +46,11 @@ GameObject:
   - component: {fileID: 4275795905128195832}
   - component: {fileID: 4275795905128195831}
   - component: {fileID: 4275795905128195830}
-  - component: {fileID: 275495952}
-  m_Layer: 0
+  - component: {fileID: 550902534}
+  - component: {fileID: 550902539}
+  m_Layer: 10
   m_Name: Enemy Sprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +189,7 @@ MonoBehaviour:
     chaseRadius: 10
     chaseSpeed: 4
     waitTime: 2.5
---- !u!114 &275495952
+--- !u!114 &550902534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,10 +198,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 4275795905128195828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0608610aba3bea0479ae7d993145eb9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8838f0c4cc927d648bd8e865e59d1609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destroySelf: 1
+--- !u!114 &550902539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4275795905128195828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acba561d7fcbdf447941b624ba7a5631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
+  maxHealth: 10
+  damageValue: 5
 --- !u!1 &4275795905438820653
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275795905438820654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Patrol Point
   m_TagString: PatrolPoint
   m_Icon: {fileID: 0}
@@ -240,7 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275795905815846034}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Patrol Point
   m_TagString: PatrolPoint
   m_Icon: {fileID: 0}
