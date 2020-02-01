@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
@@ -24,5 +22,20 @@ public class Bullet : MonoBehaviour
             rb.velocity = direction * bulletSpeed;
         else
             rb.velocity = direction * speed;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Enemy") //For player bullets
+        {
+            collision.gameObject.GetComponent<PlayerEnemyHealth>().TakeDamage();
+            Destroy(gameObject);
+        }
+        else if (collision.collider.tag != "Enemy") //For bullets that collide with world objects
+        {
+            var pd = gameObject.GetComponent<ProjectileDestroy>();
+            if (pd != null)
+                pd.DestroyBullet();
+        }
     }
 }

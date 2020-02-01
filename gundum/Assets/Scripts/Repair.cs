@@ -8,6 +8,13 @@ public class Repair : MonoBehaviour
     bool repairButton, canRepair;
     ComponentStatusScr CSS;
 
+    GameObject player;
+
+    void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     void Start()
     {
         CSS = ComponentStatusScr.COMPONENT_STATUS;
@@ -24,6 +31,7 @@ public class Repair : MonoBehaviour
     {
         if (canRepair && repairButton)
         {
+            player.GetComponent<PlayerStats>().SpendScrap(1);
             CSS?.repair(componentIndex, 1);
         }
     }
@@ -41,6 +49,6 @@ public class Repair : MonoBehaviour
     }
     void CheckInput()
     {
-        repairButton = Input.GetButtonDown("Repair");
+        repairButton = Input.GetButtonDown("Repair"); //A button
     }
 }

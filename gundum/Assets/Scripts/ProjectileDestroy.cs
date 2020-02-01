@@ -7,16 +7,22 @@ public class ProjectileDestroy : MonoBehaviour
     [SerializeField]
     float timeToDestroy = 5.0f;
 
-    // Start is called before the first frame update
+    float newTimeToDestroy;
+
     void Start()
     {
-        StartCoroutine(DestroyRoutine());
+        StartCoroutine(DestroyRoutine(timeToDestroy));
+    }
+
+    public void DestroyBullet()
+    {
+        StartCoroutine(DestroyRoutine(0.0f));
     }
 
     //Big shoutout to Gabe Troyan
-    IEnumerator DestroyRoutine()
+    IEnumerator DestroyRoutine(float waitTime)
     {
-        yield return new WaitForSeconds(timeToDestroy);
+        yield return new WaitForSeconds(waitTime);
 
         Vector3 targetScale = new Vector3(0.005f, 0.005f, 0.005f);
 
