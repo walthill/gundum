@@ -11,15 +11,40 @@ public class WeaponsSystemScr : MonoBehaviour
     List<Image> Rockets;
     [SerializeField]
     GameObject rocketBackGround;
-    // Start is called before the first frame update
+
+    EnemyHealthScr enemyHealthScript;
+    [SerializeField] private int totalAmmo = 3, missileTime = 5;
+    int currentAmmo;
+
     void Start()
     {
-        
+        enemyHealthScript = GetComponent<EnemyHealthScr>();
+        currentAmmo = totalAmmo;
+
+        //function called, after x seconds, then repeats every y seconds
+        InvokeRepeating("MechShootsMissile", missileTime, missileTime);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RestockAmmo(int amountRestocked)
     {
-        
+        if (currentAmmo == 0)
+            InvokeRepeating("MechShootsMissile", missileTime, missileTime);
+
+        currentAmmo += amountRestocked;
+        if (currentAmmo > totalAmmo)
+            currentAmmo = totalAmmo;
+    }
+
+    void MechShootsMissile()
+    {
+        if (currentAmmo == 0)
+            CancelInvoke("MechShootsMissile");
+        else
+        {
+            currentAmmo--;
+
+            //damage enemy
+            enemyHealthScript.RecieveDMG(Random.Range(50, 60));
+        }
     }
 }

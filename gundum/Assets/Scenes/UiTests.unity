@@ -3662,6 +3662,8 @@ MonoBehaviour:
   WeNeedRocketDotCom: {r: 0.7924528, g: 0.3476326, b: 0.3476326, a: 1}
   Rockets: []
   rocketBackGround: {fileID: 0}
+  totalAmmo: 3
+  missileTime: 5
 --- !u!1 &1922067626
 GameObject:
   m_ObjectHideFlags: 0
