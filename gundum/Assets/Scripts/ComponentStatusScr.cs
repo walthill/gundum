@@ -23,6 +23,8 @@ public class ComponentStatusScr : MonoBehaviour
     Text CountDownText;
     [SerializeField]
     List<Text> DamageIndicator, repairIndicatorText;
+    [SerializeField]
+    List<GameObject> SysFailWarnings;
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +67,8 @@ public class ComponentStatusScr : MonoBehaviour
     {
         int ranTarget = Random.Range(0, compSliders.Count);//getting the max is just a miss
         int ranDmg = Random.Range(0, 49);
+        //TODO MAKE A CHECK TO SEE IF THE TARGET IS STILL ALIVE
+
         if (ranTarget != compSliders.Count)
         {
             DoDMG(ranTarget, ranDmg);
@@ -118,11 +122,25 @@ public class ComponentStatusScr : MonoBehaviour
         CompStatusValue[Tar].text = compSliders[Tar].value.ToString();
         //make damage text appear
         DamageIndicator[Tar].text="-"+DMG;
+        checkSystemFailure(Tar);
         StartCoroutine(waitToMakeDamageNumberDisapear(3, Tar));
+
 
     }
 
-
+    void checkSystemFailure(int sliderIndex)
+    {
+        if (compSliders[sliderIndex].value <= 0)
+        {
+            SysFailWarnings[sliderIndex].SetActive(true);
+            StartCoroutine(waitToMakeGameobject(5, SysFailWarnings[sliderIndex]));
+        }
+        //if core is critical
+        if (compSliders[0].value < 40)
+        {
+            StartCoroutine(waitToMakeGameobject(5, SysFailWarnings[3]));
+        }
+    }
 
     public void repair(int SliderIndex,float repairAmount)
     {
@@ -156,5 +174,10 @@ public class ComponentStatusScr : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         repairIndicatorText[textIndex].text = "";
+    }
+    IEnumerator waitToMakeGameobject(float waitTime, GameObject warningLable)
+    {
+        yield return new WaitForSeconds(waitTime);
+        warningLable.SetActive(false);
     }
 }
