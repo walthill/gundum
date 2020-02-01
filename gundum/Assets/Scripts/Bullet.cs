@@ -13,8 +13,16 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void Fire(Vector3 direction)
+    public void SetBulletSpeed(float speed)
     {
-        rb.velocity = direction * bulletSpeed;
+        bulletSpeed = speed;
+    }
+
+    public void Fire(Vector3 direction, float speed = int.MinValue)
+    {
+        if(speed == int.MinValue)
+            rb.velocity = direction * bulletSpeed;
+        else
+            rb.velocity = direction * speed;
     }
 }
