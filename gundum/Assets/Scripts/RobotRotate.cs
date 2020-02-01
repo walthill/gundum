@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class RobotRotate : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private bool startClockwise;
+    bool rotatingClockwise = true;
+    [SerializeField] private float timeToRotate = 10;
+    [SerializeField] private float rotationSpeed = 0.2f;
+
     void Start()
     {
-        
+        rotatingClockwise = startClockwise;
+        InvokeRepeating("SwitchRotation", timeToRotate, timeToRotate);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(0, 0, 0.2f));
+        RotateLimb();
+    }
+
+    void RotateLimb()
+    {
+        if (rotatingClockwise)
+            transform.Rotate(new Vector3(0, 0, -rotationSpeed));
+        else
+            transform.Rotate(new Vector3(0, 0, rotationSpeed));
+    }
+
+    void SwitchRotation()
+    {
+        rotatingClockwise = !rotatingClockwise;
     }
 }
