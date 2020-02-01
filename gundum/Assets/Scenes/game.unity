@@ -2887,6 +2887,7 @@ MonoBehaviour:
   jumpForce: 10
   doubleJumpScale: 1.1
   canDoubleJump: 1
+  grounded: 0
 --- !u!95 &1045544078
 Animator:
   serializedVersion: 3
@@ -3013,10 +3014,10 @@ RectTransform:
   m_Father: {fileID: 1989471966}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73.7, y: 167}
-  m_SizeDelta: {x: 243.76, y: 148.77}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 73.7, y: -133}
+  m_SizeDelta: {x: 243.76, y: 148.77002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1099221254
 GameObject:
@@ -4689,10 +4690,10 @@ RectTransform:
   m_Father: {fileID: 1989471966}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 306.73047, y: 233.91}
-  m_SizeDelta: {x: -613.37, y: -467.81}
+  m_AnchoredPosition: {x: -226.26953, y: -66.09}
+  m_SizeDelta: {x: 452.63, y: 132.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1778549605
 MonoBehaviour:
@@ -5377,10 +5378,10 @@ RectTransform:
   m_Father: {fileID: 1989471966}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -395.32, y: 214.8}
-  m_SizeDelta: {x: -790.66, y: -429.51}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 137.68, y: -85.2}
+  m_SizeDelta: {x: 275.34003, y: 170.48999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002315248
 MonoBehaviour:
