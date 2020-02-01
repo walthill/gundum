@@ -25,6 +25,12 @@ public class WeaponsSystemScr : MonoBehaviour
         InvokeRepeating("MechShootsMissile", missileTime, missileTime);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H))
+            RestockAmmo(1);
+    }
+
     public void RestockAmmo(int amountRestocked)
     {
         if (currentAmmo == 0)
@@ -33,6 +39,10 @@ public class WeaponsSystemScr : MonoBehaviour
         currentAmmo += amountRestocked;
         if (currentAmmo > totalAmmo)
             currentAmmo = totalAmmo;
+
+        for (int i = 0; i < currentAmmo; i++)
+            Rockets[i].gameObject.SetActive(true);
+
     }
 
     void MechShootsMissile()
@@ -42,8 +52,7 @@ public class WeaponsSystemScr : MonoBehaviour
         else
         {
             currentAmmo--;
-
-            //damage enemy
+            Rockets[currentAmmo].gameObject.SetActive(false);
             enemyHealthScript.RecieveDMG(Random.Range(50, 60));
         }
     }
