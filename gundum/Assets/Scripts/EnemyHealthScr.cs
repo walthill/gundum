@@ -14,6 +14,7 @@ public class EnemyHealthScr : MonoBehaviour
     void Start()
     {
         total.text = healthBar.value.ToString();
+        part.text= healthBar.value.ToString();
     }
 
     // Update is called once per frame

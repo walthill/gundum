@@ -7,6 +7,7 @@ public class ComponentStatusScr : MonoBehaviour
 {
     public static ComponentStatusScr COMPONENT_STATUS;
     EnemyHealthScr EHS;
+    MechAudioScr MAS;
     [SerializeField]
     List<Slider> compSliders;
     //Slider core, shield, weaponSys;
@@ -28,6 +29,7 @@ public class ComponentStatusScr : MonoBehaviour
     {
         COMPONENT_STATUS = this;
         EHS = GetComponent<EnemyHealthScr>();
+        MAS = GetComponent<MechAudioScr>();
         //StartCoroutine(damageWait(timeBetweenDiceRolls));
         countDown = timeBetweenDiceRolls;
         //CountDownText
@@ -84,15 +86,18 @@ public class ComponentStatusScr : MonoBehaviour
         if (DMG_severity < 24)
         {
             DMG = MidDMG;
+            MAS.DamageSound(1);
             //med damng
         }
         if (DMG_severity >= 24 && DMG_severity < 44)
         {
             DMG = MinDMG;
+            MAS.DamageSound(0);
             //minDMG
         }
         if(DMG_severity>=44)
         {
+            MAS.DamageSound(2);
             DMG = MaxDMG;
             //maxDMg
         }
