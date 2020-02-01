@@ -23,14 +23,17 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
+    private void FixedUpdate()
+    {
+        if (Mathf.Abs(rb.velocity.x) < maxVelocity)
+            rb.AddForce(movement);
+    }
+
     void Move()
     {
         if (xMove != 0)
         {
             movement = new Vector2(xMove * moveSpeed, 0);
-
-            if(Mathf.Abs(rb.velocity.x) < maxVelocity)
-                rb.AddForce(movement);
         }
     }
 
