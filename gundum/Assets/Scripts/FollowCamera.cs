@@ -7,13 +7,16 @@ public class FollowCamera : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] float smoothSpeed = 0.125f;
     [SerializeField] Vector3 offset = Vector3.zero;
+    [SerializeField] Camera shakyCamera;
+
     private bool shouldFollow;
+    float camShakeValue = 0;
 
     //TODO: screen shake
-    float shake = 0.5f;
-    float maxAngle = 10, maxOffset = 3;
-    Camera mainCam, shakyCamera;
-
+    float shake;
+    float maxAngle = 10, maxOffset = 5;
+    Camera mainCam;
+        
     private void Awake()
     {
         mainCam = GetComponent<Camera>();
@@ -24,6 +27,11 @@ public class FollowCamera : MonoBehaviour
         Vector3 desiredPos = target.position + offset;
         transform.position += AsymptoticAverageLerp(transform.position, desiredPos, .05f);
         transform.LookAt(target);
+
+        if (Input.GetKeyDown(KeyCode.S))
+            AddTrauma(.5f);
+
+        CameraShake(camShakeValue);
     }
 
 
@@ -40,20 +48,35 @@ public class FollowCamera : MonoBehaviour
     // shakyCamera.center = camera.center + Vec2(offsetX, offsetY);
 
     //use perlin noise GetPerlinNoies(seed, time,...)
-    void CameraShake()
+
+    public void AddTrauma(float intensity)
     {
-        float angle = maxAngle * shake * Mathf.PerlinNoise(0, Time.time);
-        float xOffset = maxOffset * shake * Mathf.PerlinNoise(1, Time.time);
-        float yOffset = maxOffset * shake * Mathf.PerlinNoise(2, Time.time);
-
-        shakyCamera.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x + angle, transform.localEulerAngles.y + angle, transform.localEulerAngles.z + angle);
-        Vector2 foo = mainCam.rect.center + new Vector2(xOffset, yOffset);
-        shakyCamera.rect.center.Set(foo.x, foo.y);
-
-        mainCam.rect = shakyCamera.rect;
-        transform.localEulerAngles = shakyCamera.transform.localEulerAngles;
+        camShakeValue = intensity;
     }
 
+    void CameraShake(float intensity)
+    {
+        if(intensity > 0)
+        {
+            shake = Random.Range(0.001f, 1.0f);
+            float angle = maxAngle * shake * Random.Range(-1, 1);
+            float xOffset = maxOffset * shake * Random.Range(-1, 1);
+            float yOffset = maxOffset * shake * Random.Range(-1, 1);
+
+            //Translational shake - currently doesn't work
+            Vector2 foo = mainCam.rect.center + new Vector2(xOffset, yOffset);
+            shakyCamera.rect.center.Set(foo.x, foo.y);
+            Debug.Log(shakyCamera.rect.center);
+            mainCam.rect = shakyCamera.rect;
+            
+            //Rotational shake
+            shakyCamera.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, angle);
+            transform.localEulerAngles = shakyCamera.transform.localEulerAngles;
+            shakyCamera.transform.localEulerAngles = Vector3.zero;
+           
+            camShakeValue -= Time.fixedDeltaTime;
+        }
+    }
 
     Vector3 AsymptoticAverageLerp(Vector3 originPos, Vector3 targetPos, float percentage)
     {
