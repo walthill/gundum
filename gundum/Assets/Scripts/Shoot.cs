@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
+    playerAudioScr PAS;
+    ShakeCamera SHAKE;
     [SerializeField] Transform muzzle;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] float fireRate = 0.2f;
+    [SerializeField]
+    GameObject muzzleFlash;
 
     private float aimDirectionY, aimDirectionX, shoot;
     float aimValue;
@@ -18,6 +22,8 @@ public class Shoot : MonoBehaviour
     private void Awake()
     {
         bulletDirection = -muzzle.right;
+        PAS = GetComponentInParent<playerAudioScr>();
+        SHAKE = Camera.main.GetComponent<ShakeCamera>();
     }
 
     void Update()
@@ -56,6 +62,13 @@ public class Shoot : MonoBehaviour
 
                 GameObject bullet = Instantiate(bulletPrefab, muzzle.position, muzzle.rotation) as GameObject;
                 bullet.GetComponent<Bullet>().Fire(bulletDirection);
+                //play sound
+                PAS.PlaySoundByIndex(1);
+                //do shake
+                SHAKE.AddTrauma(.08f, .15f);
+                //muzzleFlash
+                muzzleFlash.SetActive(true);
+                StartCoroutine(waitToMakeFlashDisapear(.1f));
             }
         }
         else if (shoot <= fireRate)
@@ -69,4 +82,10 @@ public class Shoot : MonoBehaviour
         aimDirectionY = Input.GetAxis("RightStickY");
     }
 
+
+    IEnumerator waitToMakeFlashDisapear(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        muzzleFlash.SetActive(false);
+    }
 }

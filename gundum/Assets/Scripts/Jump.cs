@@ -6,17 +6,20 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Jump : MonoBehaviour
 {
+    playerAudioScr PAS;
     [SerializeField] float jumpForce = 5;
     [SerializeField] private float doubleJumpScale = 1.25f;
     [SerializeField] bool canDoubleJump;
 
     Rigidbody2D rb;
-    bool jump, grounded, doubleJump;
+    bool jump, doubleJump;
+    public bool grounded;
     Vector2 jumpVec;
     FollowCamera followCam;
 
     void Awake()
     {
+        PAS = GetComponent<playerAudioScr>();
         followCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<FollowCamera>();
         rb = GetComponent<Rigidbody2D>();
         jumpVec = new Vector2(0, jumpForce);
@@ -38,6 +41,7 @@ public class Jump : MonoBehaviour
         {
             grounded = false;
             rb.velocity = jumpVec;
+            PAS.PlaySoundByIndex(0);
         }
         else if(jump && !grounded)
         {

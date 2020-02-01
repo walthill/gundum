@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 3, maxVelocity = 3;
     [SerializeField] Shoot gunScript;
+    playerAudioScr PAS;
+    Jump JUMP;
 
     Rigidbody2D rb;
     bool movingRight = false;
@@ -15,7 +17,9 @@ public class PlayerMovement : MonoBehaviour
     
     void Awake()
     {
+        PAS = GetComponent<playerAudioScr>();
         rb = GetComponent<Rigidbody2D>();
+        JUMP = GetComponent<Jump>();
     }
 
     private void Update()
@@ -35,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if (xMove != 0)
         {
             movement = new Vector2(xMove * moveSpeed, 0);
+            
         }
 
         if (xMove < -0.5f)
@@ -55,6 +60,16 @@ public class PlayerMovement : MonoBehaviour
                 FlipSprite();
             }
         }
+
+        if (Mathf.Abs(rb.velocity.x) > 2f&&JUMP.grounded)
+        {
+            PAS.startWalking();
+        }
+        else
+        {
+            PAS.StopWalking();
+        }
+
     }
 
     void FlipSprite()
