@@ -29,14 +29,21 @@ public class Shoot : MonoBehaviour
 
     private void DoAim()
     {
-       // aimValue = Mathf.Atan2(aimDirectionX, aimDirectionY) * Mathf.Rad2Deg;
-     //   transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, aimValue + offset));
+        aimValue = Mathf.Atan2(aimDirectionX, aimDirectionY) * Mathf.Rad2Deg;
+
+        //Debug.Log(aimValue);
+        int angleNew = ((((int)(aimValue + offset)) / 45))*45;
+        Debug.Log(angleNew);
+
+        transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angleNew));
+
+        bulletDirection = -muzzle.right * (90/offset);
     }
 
     public void SetOffset(float offsetValue)
     {
         offset = offsetValue;
-        bulletDirection = -bulletDirection;
+        //bulletDirection = -bulletDirection;
     }
 
     void DoShoot()
