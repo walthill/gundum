@@ -1,0 +1,2 @@
+-Ammo can go past the max
+-Health pack should fully heal because otherwise this shit's too hard

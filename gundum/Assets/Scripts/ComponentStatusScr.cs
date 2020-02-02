@@ -157,6 +157,17 @@ public class ComponentStatusScr : MonoBehaviour
             StartCoroutine(waitToMakeGameobject(5, SysFailWarnings[3]));
         }
     }
+
+    public void BeingBoarded()
+    {
+        if (!SysFailWarnings[4].activeSelf)
+        {
+            MAS.PlayWarningSound(0);
+            SysFailWarnings[4].SetActive(true);
+            StartCoroutine(waitToMakeGameobject(3, SysFailWarnings[4]));
+        }
+        
+    }
     public void RepairSound()
     {
         MAS.PlayWarningSound(3);//this is awful and I feel bad
