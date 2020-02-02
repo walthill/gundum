@@ -54,7 +54,7 @@ public class Jump : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Ground")
+        if(collision.collider.tag == "Ground" || collision.collider.tag == "Joint")
         {
             if(!grounded)
             {

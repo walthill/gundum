@@ -7,12 +7,13 @@ public class RobotRotate : MonoBehaviour
     [SerializeField] private bool startClockwise;
     bool rotatingClockwise = true;
     [SerializeField] private float timeToRotate = 10;
+    [SerializeField] private float startTime = 10;
     [SerializeField] private float rotationSpeed = 0.2f;
 
     void Start()
     {
         rotatingClockwise = startClockwise;
-        InvokeRepeating("SwitchRotation", timeToRotate, timeToRotate);
+        InvokeRepeating("SwitchRotation", startTime, timeToRotate);
     }
 
     void Update()
