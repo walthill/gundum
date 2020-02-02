@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Repair : MonoBehaviour
 {
+    [SerializeField]
+    GameObject buttonPompt;
     public int componentIndex;
     bool repairButton, canRepair;
     ComponentStatusScr CSS;
@@ -38,13 +40,23 @@ public class Repair : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
+        {
             canRepair = true;
+            buttonPompt.SetActive(true);
+            
+        }
+            
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
+        {
             canRepair = false;
+            buttonPompt.SetActive(false);
+        }
+            
     }
     void CheckInput()
     {
