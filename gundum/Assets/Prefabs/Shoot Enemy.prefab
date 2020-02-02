@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 283232432}
   - component: {fileID: 283232433}
   - component: {fileID: 7594954268640664548}
+  - component: {fileID: 1368208277986668308}
   m_Layer: 10
   m_Name: Enemy Sprite
   m_TagString: Enemy
@@ -264,6 +265,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b6cbead5c041b074b8d2fa80b5e7070b, type: 3}
   - {fileID: 8300000, guid: 2fef601f5b2894f4eac07d1eaec3d075, type: 3}
   - {fileID: 8300000, guid: 53586c726fc49c94d9add67b4cb62bc2, type: 3}
+--- !u!114 &1368208277986668308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5243776678449033758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88d0751b33883b2479da8575d56959d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrapPrefab: {fileID: 3917073596590288283, guid: 1a130177b5214e44e85f7c261983e267,
+    type: 3}
 --- !u!1 &5243776678828213080
 GameObject:
   m_ObjectHideFlags: 0

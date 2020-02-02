@@ -730,24 +730,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &283232431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5243776678449033758, guid: 788b2dc231f45b540bb0094beb746470,
-    type: 3}
-  m_PrefabInstance: {fileID: 5243776679369610647}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &283232432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283232431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0608610aba3bea0479ae7d993145eb9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &301891123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,7 +2906,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1868417282287260892, guid: 0875e9846c614c142a823895d459b721,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2999,7 +2981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0fb8d5a974926409953cf3469f3da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 75
+  currentHealth: 100
   maxHealth: 100
   damageValue: 25
   scrap: 0
@@ -3752,7 +3734,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: cde1950adca0c5d4bbb48886c56db8d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5450,9 +5432,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1989471958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2801a1143fbdd44a5fbbb8bf80dce0, type: 3}
+  m_Script: {fileID: 11500000, guid: f8b9a07f7bc3d584badc26320e71e57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RocketReadyColor: {r: 0, g: 0, b: 0, a: 0}
+  RocketEmptyColor: {r: 0, g: 0, b: 0, a: 0}
+  WeNeedRocketDotCom: {r: 0, g: 0, b: 0, a: 0}
+  Rockets:
+  - {fileID: 979555139}
+  - {fileID: 349470106}
+  - {fileID: 851293347}
+  rocketBackGround: {fileID: 55387726}
+  totalAmmo: 3
+  missileTime: 5
 --- !u!114 &1989471960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6064,72 +6056,6 @@ PrefabInstance:
       propertyPath: chaseData.target
       value: 
       objectReference: {fileID: 1045544076}
-    - target: {fileID: 4275795905128195829, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195829, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195829, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195833, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5a308fc0824c0a646ae48289de31a7b6,
-        type: 3}
-    - target: {fileID: 4275795905128195833, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195833, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195833, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195833, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195832, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195832, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195832, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195832, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275795905128195831, guid: f345f2e5f47197c41a3723cd5d0535eb,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f345f2e5f47197c41a3723cd5d0535eb, type: 3}
 --- !u!1001 &5243776679369610647
@@ -6139,11 +6065,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5243776678828213080, guid: 788b2dc231f45b540bb0094beb746470,
+    - target: {fileID: 5243776678449033752, guid: 788b2dc231f45b540bb0094beb746470,
         type: 3}
-      propertyPath: m_Name
-      value: Shoot Enemy
-      objectReference: {fileID: 0}
+      propertyPath: shootingData.target
+      value: 
+      objectReference: {fileID: 1045544076}
     - target: {fileID: 5243776678828213063, guid: 788b2dc231f45b540bb0094beb746470,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6199,11 +6125,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5243776678449033752, guid: 788b2dc231f45b540bb0094beb746470,
+    - target: {fileID: 5243776678828213080, guid: 788b2dc231f45b540bb0094beb746470,
         type: 3}
-      propertyPath: shootingData.target
-      value: 
-      objectReference: {fileID: 1045544076}
+      propertyPath: m_Name
+      value: Shoot Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 788b2dc231f45b540bb0094beb746470, type: 3}
 --- !u!1001 &8544199494542471212
@@ -6213,20 +6139,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8544199494677482314, guid: 0491b59ee3278ed47ae1f6d01b946f27,
-        type: 3}
-      propertyPath: m_Name
-      value: ComponentTrigger
-      objectReference: {fileID: 0}
     - target: {fileID: 8544199494677482309, guid: 0491b59ee3278ed47ae1f6d01b946f27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.64
+      value: 16.3
       objectReference: {fileID: 0}
     - target: {fileID: 8544199494677482309, guid: 0491b59ee3278ed47ae1f6d01b946f27,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.74
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 8544199494677482309, guid: 0491b59ee3278ed47ae1f6d01b946f27,
         type: 3}
@@ -6272,6 +6193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544199494677482314, guid: 0491b59ee3278ed47ae1f6d01b946f27,
+        type: 3}
+      propertyPath: m_Name
+      value: ComponentTrigger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0491b59ee3278ed47ae1f6d01b946f27, type: 3}

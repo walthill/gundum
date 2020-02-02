@@ -8,12 +8,14 @@ public class DealDamage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "Player") //Deal damage to player with enemy bullets
+        if (collision.collider.tag == "Player") //Deal damage to player with enemy bullets
         {
             collision.gameObject.GetComponent<PlayerStats>().TakeDamage();
 
-            if(destroySelf)
+            if (destroySelf)
+            {
                 Destroy(gameObject);
+            }
         }
     }
 }

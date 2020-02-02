@@ -21,6 +21,7 @@ public class EnemyAudio : MonoBehaviour
         {
             AudioSource s = gameObject.AddComponent<AudioSource>();
             s.clip = c;
+            s.playOnAwake = false;
             sourceList.Add(s);
         }
     }
@@ -31,6 +32,7 @@ public class EnemyAudio : MonoBehaviour
         {
             //play random grunt sound
             int index = Random.Range(0, hitSounds.Count - 1);
+            sourceList[index].enabled = true;
             sourceList[index].Play();
         }
     }

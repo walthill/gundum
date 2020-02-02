@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class PlayerEnemyHealth : MonoBehaviour
 {
-    [SerializeField] int currentHealth, maxHealth, damageValue; 
+    [SerializeField] int currentHealth, maxHealth, damageValue;
 
+   
     public void TakeDamage()
     {
         if (currentHealth > 0)
             currentHealth -= damageValue;
-        
-        if(currentHealth <= 0)
+
+        if (currentHealth <= 0)
+        {
+            GetComponent<ScrapDropper>().DropScrapLoot();
             Destroy(gameObject); // destroy this enemy
+        }
     }
 }
