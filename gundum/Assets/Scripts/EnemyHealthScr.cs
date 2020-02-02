@@ -44,10 +44,10 @@ public class EnemyHealthScr : MonoBehaviour
         if(healthBar.value <= 0)
         {
             //shake the fucking camera
-            shake.AddTrauma(3, 1);
+            shake.AddTrauma(5f, 1f);
             ComponentStatusScr.COMPONENT_STATUS.winSound();
             //make win courroutine
-            StartCoroutine(waitToEnd(3));
+            StartCoroutine(waitToEnd(5));
         }
             
     }
