@@ -60,6 +60,7 @@ public class EnemyHealthScr : MonoBehaviour
 
     IEnumerator waitToEnd(float waitTime)
     {
+        GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(waitTime);
         //damageRecieved.text = "";
         SceneManager.LoadScene("win");
