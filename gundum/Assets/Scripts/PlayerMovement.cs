@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         JUMP = GetComponent<Jump>();
     }
 
-    private void Update()
+private void Update()
     {
         CheckInput();
         Move();
@@ -30,16 +30,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(movement == Vector2.zero && JUMP.grounded)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+
         if (Mathf.Abs(rb.velocity.x) < maxVelocity)
             rb.AddForce(movement);
     }
 
     void Move()
     {
-        if (xMove != 0)
+        if (xMove > 0.25f || xMove < -0.25f)
         {
             movement = new Vector2(xMove * moveSpeed, 0);
             
+        }
+        else
+        {
+            movement = Vector2.zero;
         }
 
         if (xMove < -0.5f)
@@ -61,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Mathf.Abs(rb.velocity.x) > 2f&&JUMP.grounded)
+        if (Mathf.Abs(rb.velocity.x) > 2f && JUMP.grounded)
         {
             PAS.startWalking();
         }
