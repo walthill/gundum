@@ -22,6 +22,9 @@ public class PatrolAndShoot : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        if (shootingData.target == null)
+            shootingData.target = GameObject.FindGameObjectWithTag("Player").transform;
+
         rb = GetComponent<Rigidbody2D>();
 
         InitEnemyPatrol();
@@ -58,7 +61,7 @@ public class PatrolAndShoot : MonoBehaviour
         if (diff.magnitude < shootingData.shotRadius)
         {
             shouldContinueChase = true;
-            state = EnemyState.CHASE;
+            state = EnemyState.SHOOT;
         }
         else
         {
@@ -80,11 +83,11 @@ public class PatrolAndShoot : MonoBehaviour
 
             Patrol();
         }
-        else if (state == EnemyState.CHASE)
-            Chase();
+        else if (state == EnemyState.SHOOT)
+            Shoot();
     }
 
-    void Chase()
+    void Shoot()
     {
         direction = shootingData.target.position - transform.position;
 
