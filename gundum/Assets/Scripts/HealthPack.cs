@@ -9,7 +9,10 @@ public class HealthPack : MonoBehaviour
         if (collision.tag == "Player")
         {
             if (collision.gameObject.GetComponent<PlayerStats>().Heal())
+            {
+                GetComponentInParent<MissileSpawner>().SpawnNewObject();
                 Destroy(gameObject);
+            }
         }
     }
 }

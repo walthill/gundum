@@ -11,9 +11,13 @@ public class Repair : MonoBehaviour
     ComponentStatusScr CSS;
 
     GameObject player;
+    bool isMissileComputer;
 
     void Awake()
     {
+        if (componentIndex == 2)
+            isMissileComputer = true;
+
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -41,12 +45,15 @@ public class Repair : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            if (isMissileComputer)
+            {
+                player.GetComponent<PlayerStats>().LoadMissle();
+                ComponentStatusScr.COMPONENT_STATUS.LoadMissile();
+            }
+
             canRepair = true;
             buttonPompt.SetActive(true);
-            
         }
-            
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)

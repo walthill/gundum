@@ -176,6 +176,11 @@ public class ComponentStatusScr : MonoBehaviour
         return 1;
     }
 
+    public void LoadMissile()
+    {
+        GetComponent<WeaponsSystemScr>().RestockAmmo(1);
+    }
+
     //starts decay timer
     IEnumerator DecayWait(float waitTime)
     {
