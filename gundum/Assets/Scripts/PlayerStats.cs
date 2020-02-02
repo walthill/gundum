@@ -12,9 +12,11 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] int scrap = 0, maxScrap = 50;   //currency
     [SerializeField] int missles = 1; //missle to load into weapon system. can only carry one
     public Text healthText, scrapText, missilesText;
+    ShakeCamera SHAKE;
 
     private void Start()
     {
+        SHAKE = Camera.main.GetComponent<ShakeCamera>();
         UpdateUI();
     }
 
@@ -38,6 +40,7 @@ public class PlayerStats : MonoBehaviour
             StartCoroutine(HitRoutine());
             currentHealth -= damageValue;
             UpdateUI();
+            SHAKE.AddTrauma(.05f, .05f);
         }
         if (currentHealth <= 0)
         {

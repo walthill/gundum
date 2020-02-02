@@ -162,11 +162,20 @@ public class ComponentStatusScr : MonoBehaviour
     {
         if (!SysFailWarnings[4].activeSelf)
         {
-            MAS.PlayWarningSound(0);
+            MAS.PlayWarningSound(2);
             SysFailWarnings[4].SetActive(true);
             StartCoroutine(waitToMakeGameobject(3, SysFailWarnings[4]));
         }
         
+    }
+
+    public void winSound()
+    {
+        MAS.DamageSound(2);
+    }
+    public void CollectSound()
+    {
+        MAS.PlayWarningSound(4);
     }
     public void RepairSound()
     {
@@ -182,6 +191,7 @@ public class ComponentStatusScr : MonoBehaviour
             //display repair text
             repairIndicatorText[SliderIndex].text = "+" + repairAmount;
             //disapearText
+            CompStatusValue[SliderIndex].text = compSliders[SliderIndex].value.ToString();
             StartCoroutine(waitToMakeRepairNumberDisapear(.1f, SliderIndex));
             Debug.Log("reparing:" + repairAmount);
 
