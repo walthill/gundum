@@ -14,6 +14,7 @@ public class PlayerEnemyHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            GetComponentInParent<ChaseEnemySpawner>().SpawnNewObject();
             GetComponent<ScrapDropper>().DropScrapLoot();
             Destroy(gameObject); // destroy this enemy
         }
