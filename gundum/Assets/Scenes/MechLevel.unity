@@ -2870,50 +2870,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1762859262}
     m_Modifications:
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05343342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7624607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18138862
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.63722277
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05343342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7624607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18138862
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.63722277
+      objectReference: {fileID: 0}
     - target: {fileID: 4275795904835663291, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
         type: 3}
       propertyPath: m_Name
       value: Shoot Enemy Spawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.05343342
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.7624607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18138862
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.63722277
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.05343342
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.7624607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18138862
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.63722277
       objectReference: {fileID: 0}
     - target: {fileID: 4275795904835663292, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
         type: 3}
@@ -6672,50 +6672,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1762859262}
     m_Modifications:
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05343342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7624607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18138862
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.63722277
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05343342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7624607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18138862
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.63722277
+      objectReference: {fileID: 0}
     - target: {fileID: 4275795904835663291, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
         type: 3}
       propertyPath: m_Name
       value: Shoot Enemy Spawner (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.05343342
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.7624607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18138862
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.63722277
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.05343342
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.7624607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18138862
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.63722277
       objectReference: {fileID: 0}
     - target: {fileID: 4275795904835663292, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
         type: 3}
@@ -8296,50 +8296,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1762859262}
     m_Modifications:
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05343342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7624607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18138862
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.63722277
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05343342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7624607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18138862
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.63722277
+      objectReference: {fileID: 0}
     - target: {fileID: 4275795904835663291, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
         type: 3}
       propertyPath: m_Name
       value: Shoot Enemy Spawner (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.05343342
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.7624607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18138862
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.63722277
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.05343342
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.7624607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18138862
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.63722277
       objectReference: {fileID: 0}
     - target: {fileID: 4275795904835663292, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
         type: 3}
@@ -10354,7 +10354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   maxHealth: 100
-  damageValue: 25
+  damageValue: 5
   scrap: 0
   maxScrap: 50
   missles: 0
@@ -14735,50 +14735,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1762859262}
     m_Modifications:
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05343342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7624607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18138862
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.63722277
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05343342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.7624607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.18138862
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.63722277
+      objectReference: {fileID: 0}
     - target: {fileID: 4275795904835663291, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
         type: 3}
       propertyPath: m_Name
       value: Shoot Enemy Spawner (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.05343342
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.7624607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18138862
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.63722277
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.05343342
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.7624607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18138862
-      objectReference: {fileID: 0}
-    - target: {fileID: 5490662265445224515, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.63722277
       objectReference: {fileID: 0}
     - target: {fileID: 4275795904835663292, guid: 4c45dea31a37d5f4c84f4ade88cb47ef,
         type: 3}
