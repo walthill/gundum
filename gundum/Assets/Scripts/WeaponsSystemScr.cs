@@ -42,18 +42,20 @@ public class WeaponsSystemScr : MonoBehaviour
 
         for (int i = 0; i < currentAmmo; i++)
             Rockets[i].gameObject.SetActive(true);
-
     }
 
     void MechShootsMissile()
     {
-        if (currentAmmo == 0)
-            CancelInvoke("MechShootsMissile");
-        else
-        {
-            currentAmmo--;
-            Rockets[currentAmmo].gameObject.SetActive(false);
-            enemyHealthScript.RecieveDMG(Random.Range(50, 60));
-        }
+        if (ComponentStatusScr.COMPONENT_STATUS.GetMissleSystemHealth() > 0)
+        {     
+            if (currentAmmo == 0)
+                CancelInvoke("MechShootsMissile");
+            else
+            {
+                currentAmmo--;
+                Rockets[currentAmmo].gameObject.SetActive(false);
+                enemyHealthScript.RecieveDMG(Random.Range(50, 60));
+            }
+        } 
     }
 }

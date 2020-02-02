@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -42,6 +42,11 @@ public class ComponentStatusScr : MonoBehaviour
         {
             CompStatusValue[i].text =compSliders[i].value.ToString();
         }
+    }
+
+    internal int GetMissleSystemHealth()
+    {
+        return (int)compSliders[2].value;
     }
 
     // Update is called once per frame
