@@ -6,7 +6,14 @@ public class ScrapExplode : MonoBehaviour
 {
     [SerializeField] List<Rigidbody2D> rbList;
     [SerializeField] float explosionForce = 10;
+    //[SerializeField] AudioClip collectSound;
+    //AudioSource csources;
 
+    private void Start()
+    {
+        //csources = gameObject.AddComponent<AudioSource>();
+        //csources.clip = collectSound;
+    }
     void Awake()
     {
         foreach (var item in rbList)

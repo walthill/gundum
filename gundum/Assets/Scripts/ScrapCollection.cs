@@ -9,6 +9,7 @@ public class ScrapCollection : MonoBehaviour
         if (collision.collider.tag == "Player")
         {
             int scrapAmount = Random.Range(1, 2);
+            ComponentStatusScr.COMPONENT_STATUS.CollectSound();
             collision.gameObject.GetComponent<PlayerStats>().PickUpScrap(scrapAmount);
             Destroy(gameObject);
         }

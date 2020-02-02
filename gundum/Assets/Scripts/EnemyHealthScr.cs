@@ -11,9 +11,12 @@ public class EnemyHealthScr : MonoBehaviour
     [SerializeField]
     Text damageRecieved, part, total;
 
+    ShakeCamera shake;
+
     // Start is called before the first frame update
     void Start()
     {
+        shake = Camera.main.GetComponent<ShakeCamera>();
         total.text = healthBar.value.ToString();
         part.text= healthBar.value.ToString();
     }
@@ -39,7 +42,14 @@ public class EnemyHealthScr : MonoBehaviour
         }
 
         if(healthBar.value <= 0)
-            SceneManager.LoadScene("win");
+        {
+            //shake the fucking camera
+            shake.AddTrauma(3, 1);
+            ComponentStatusScr.COMPONENT_STATUS.winSound();
+            //make win courroutine
+            StartCoroutine(waitToEnd(3));
+        }
+            
     }
 
     IEnumerator waitToMakeDMGTextDisapear(float waitTime)
@@ -48,5 +58,11 @@ public class EnemyHealthScr : MonoBehaviour
         damageRecieved.text = "";
     }
 
+    IEnumerator waitToEnd(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        //damageRecieved.text = "";
+        SceneManager.LoadScene("win");
+    }
 
 }
