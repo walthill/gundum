@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EnemyHealthScr : MonoBehaviour
@@ -29,10 +30,16 @@ public class EnemyHealthScr : MonoBehaviour
 
     public void RecieveDMG(float damage)
     {
-        healthBar.value -= damage;
-        part.text = healthBar.value.ToString();
-        damageRecieved.text = "-" + damage;
-        StartCoroutine(waitToMakeDMGTextDisapear(4));
+        if (healthBar.value > 0)
+        {
+            healthBar.value -= damage;
+            part.text = healthBar.value.ToString();
+            damageRecieved.text = "-" + damage;
+            StartCoroutine(waitToMakeDMGTextDisapear(4));
+        }
+
+        if(healthBar.value <= 0)
+            SceneManager.LoadScene("win");
     }
 
     IEnumerator waitToMakeDMGTextDisapear(float waitTime)

@@ -50,7 +50,7 @@ public class PlayerStats : MonoBehaviour
             missles -= 1;
     }
 
-    public void PickUpMissle()
+    public void PickUpMissile()
     {
         if (missles == 0)
             missles += 1;
