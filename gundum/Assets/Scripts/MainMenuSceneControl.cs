@@ -8,7 +8,7 @@ public class MainMenuSceneControl : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("StartButton"))
-            SceneManager.LoadScene("game");
+            SceneManager.LoadScene("MechLevel");
         if (Input.GetButtonDown("Cancel"))
             Application.Quit();
     }

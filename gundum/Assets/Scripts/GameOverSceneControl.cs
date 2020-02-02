@@ -8,7 +8,7 @@ public class GameOverSceneControl : MonoBehaviour
     void Update()
     {
         if(Input.GetButtonDown("StartButton")) 
-            SceneManager.LoadScene("game");
+            SceneManager.LoadScene("MechLevel");
         if (Input.GetButtonDown("Cancel"))
             SceneManager.LoadScene("main");
     }

@@ -26,9 +26,14 @@ public class PlayerStats : MonoBehaviour
     public void TakeDamage()
     {
         if (currentHealth > 0)
+        {
+            StartCoroutine(HitRoutine());
             currentHealth -= damageValue;
-        else
+        }
+        if (currentHealth <= 0)
+        {
             GameOver();
+        }
     }
 
     public void PickUpScrap(int amt) { scrap += amt; }
@@ -64,5 +69,13 @@ public class PlayerStats : MonoBehaviour
     void GameOver()
     {
         SceneManager.LoadScene("end");
+    }
+    
+    IEnumerator HitRoutine()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;  
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().color = Color.white;
+
     }
 }
