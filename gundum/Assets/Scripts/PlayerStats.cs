@@ -13,6 +13,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] int missles = 1; //missle to load into weapon system. can only carry one
     public Text healthText, scrapText, missilesText;
     ShakeCamera SHAKE;
+    int healthBoostValue = 10;
 
     private void Start()
     {
@@ -26,7 +27,7 @@ public class PlayerStats : MonoBehaviour
 
         if (currentHealth < maxHealth)
         {
-            currentHealth += damageValue;
+            currentHealth += healthBoostValue;
             hasHealed = true;
         }
 
