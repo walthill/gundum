@@ -1,7 +1,190 @@
 fileFormatVersion: 2
 guid: 86eceb79e65c267408458ba65c695fd4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5148193920005695158
+    second: Sentinela_0
+  - first:
+      213: 1249517159494046686
+    second: Sentinela_1
+  - first:
+      213: -746232656955121963
+    second: Sentinela_2
+  - first:
+      213: 5343036960241886753
+    second: Sentinela_3
+  - first:
+      213: 5248207690351865225
+    second: Sentinela_4
+  - first:
+      213: 9197465111720544150
+    second: Sentinela_5
+  - first:
+      213: -5530716523534304673
+    second: Sentinela_6
+  - first:
+      213: -4730617407811484721
+    second: Sentinela_7
+  - first:
+      213: 7375747649722094124
+    second: Sentinela_8
+  - first:
+      213: 6529747495911740711
+    second: Sentinela_9
+  - first:
+      213: -3146371702779697935
+    second: Sentinela_10
+  - first:
+      213: -8240428359071951149
+    second: Sentinela_11
+  - first:
+      213: -7917585176094334956
+    second: Sentinela_12
+  - first:
+      213: -1960159048476477152
+    second: Sentinela_13
+  - first:
+      213: -422011520602885083
+    second: Sentinela_14
+  - first:
+      213: -1789106999548136220
+    second: Sentinela_15
+  - first:
+      213: 2863138552553486311
+    second: Sentinela_16
+  - first:
+      213: 7685553004036889887
+    second: Sentinela_17
+  - first:
+      213: -749181284116182708
+    second: Sentinela_18
+  - first:
+      213: 1794939315241260208
+    second: Sentinela_19
+  - first:
+      213: 2587588233752813488
+    second: Sentinela_20
+  - first:
+      213: 5192109006667623571
+    second: Sentinela_21
+  - first:
+      213: 1684157617728538403
+    second: Sentinela_22
+  - first:
+      213: -265798405395251088
+    second: Sentinela_23
+  - first:
+      213: -3354592191479058033
+    second: Sentinela_24
+  - first:
+      213: -7877284814641673872
+    second: Sentinela_25
+  - first:
+      213: -2329477471799973122
+    second: Sentinela_26
+  - first:
+      213: -319952226629371146
+    second: Sentinela_27
+  - first:
+      213: -7200248840880980937
+    second: Sentinela_28
+  - first:
+      213: 6869889768365641300
+    second: Sentinela_29
+  - first:
+      213: 6889263775518904668
+    second: Sentinela_30
+  - first:
+      213: 5698558146125087806
+    second: Sentinela_31
+  - first:
+      213: 2241619815538328686
+    second: Sentinela_32
+  - first:
+      213: -3904716846335278874
+    second: Sentinela_33
+  - first:
+      213: -4998786336242448310
+    second: Sentinela_34
+  - first:
+      213: -4898464798531990896
+    second: Sentinela_35
+  - first:
+      213: -908406488598457351
+    second: Sentinela_36
+  - first:
+      213: 4781668473015694883
+    second: Sentinela_37
+  - first:
+      213: -6963727217827705003
+    second: Sentinela_38
+  - first:
+      213: 6535566221733422412
+    second: Sentinela_39
+  - first:
+      213: 6554824052745674617
+    second: Sentinela_40
+  - first:
+      213: -1020196035494880250
+    second: Sentinela_41
+  - first:
+      213: -913519826476978348
+    second: Sentinela_42
+  - first:
+      213: 7261812868802757220
+    second: Sentinela_43
+  - first:
+      213: -7849025312524534119
+    second: Sentinela_44
+  - first:
+      213: 7999000289446391755
+    second: Sentinela_45
+  - first:
+      213: 5808304413871524644
+    second: Sentinela_46
+  - first:
+      213: 1539954716225859240
+    second: Sentinela_47
+  - first:
+      213: 5261167326503028542
+    second: Sentinela_48
+  - first:
+      213: -3780795890063138774
+    second: Sentinela_49
+  - first:
+      213: 5498456657981368198
+    second: Sentinela_50
+  - first:
+      213: 7306483211035841212
+    second: Sentinela_51
+  - first:
+      213: 1908950833318137640
+    second: Sentinela_52
+  - first:
+      213: -2917172450124375471
+    second: Sentinela_53
+  - first:
+      213: 7438255057431503005
+    second: Sentinela_54
+  - first:
+      213: -4921348096831028525
+    second: Sentinela_55
+  - first:
+      213: -3006688517139901082
+    second: Sentinela_56
+  - first:
+      213: 2794067171174865338
+    second: Sentinela_57
+  - first:
+      213: 4253659099195219317
+    second: Sentinela_58
+  - first:
+      213: -360426538883189726
+    second: Sentinela_59
+  - first:
+      213: -8054100453992214951
+    second: Sentinela_60
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +214,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +223,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +253,1302 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sentinela_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 404
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc78224d824e3345bb2ec5b1523c022
+      internalID: 5148193920005695158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 402
+        width: 31
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b0d04acbe43574fae5064aade5b7ef
+      internalID: 1249517159494046686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 403
+        width: 24
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6ed374481cfcb4d995bd9e102c1e57
+      internalID: -746232656955121963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_3
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 405
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d355238c458724d9e5e1e83a45651b
+      internalID: 5343036960241886753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_4
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 402
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cec58adefd6654449cc95207d1cec5d
+      internalID: 5248207690351865225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 461
+        width: 31
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82dd4789065bb643b27c54484817103
+      internalID: 9197465111720544150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_6
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 462
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4280f16e83956c642a4a3d9d1d696a4f
+      internalID: -5530716523534304673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_7
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 463
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8690fc163886e0f48afce8db6d657fb8
+      internalID: -4730617407811484721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_8
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 464
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067cee75c5516fe43a0cbf5477ceaa3f
+      internalID: 7375747649722094124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_9
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 464
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd367ff4a7b532e4db6012b473bad10b
+      internalID: 6529747495911740711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_10
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 409
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b1710acf80f3145bc914c353de40ac
+      internalID: -3146371702779697935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_11
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 449
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4038a28a3ac084eb02d8f49a70dd09
+      internalID: -8240428359071951149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_12
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 447
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d10f65ece1de174492fdae7f1299641
+      internalID: -7917585176094334956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_13
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 447
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b7f82b5f4f74048a458a2ec83086d3
+      internalID: -1960159048476477152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_14
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 445
+        width: 52
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1de91fe62932945aaca8d686d4441b
+      internalID: -422011520602885083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 414
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9db900fcd2d3684b832318fb80fbac7
+      internalID: -1789106999548136220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_16
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 436
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473703ff879510e479838cfcf24d288c
+      internalID: 2863138552553486311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_17
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 436
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545662fc4eee9a744b7f6d905c32e257
+      internalID: 7685553004036889887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_18
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 422
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db47acd51836dbd4aa6a7aab78f4f643
+      internalID: -749181284116182708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_19
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 414
+        width: 37
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe2c9710f40a7e4782c40939d8188e9
+      internalID: 1794939315241260208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_20
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 410
+        width: 60
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c251bb921fb6141a73ef2bba27031a
+      internalID: 2587588233752813488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 96
+        width: 222
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8788e0a60f007846ab1be8b39008652
+      internalID: 5192109006667623571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_22
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 340
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fd28439b3e30845bf4c70ba3ac06a4
+      internalID: 1684157617728538403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_23
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 333
+        width: 107
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d43bdeac93f6444ab3ea535f7e04c73
+      internalID: -265798405395251088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_24
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 340
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fc77323c478d846a7e7ec244345831
+      internalID: -3354592191479058033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_25
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 278
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fbf3f70e877464d9f76807d47cd147
+      internalID: -7877284814641673872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_26
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 274
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d86b5306b4f6274289cc23f4aac520a
+      internalID: -2329477471799973122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_27
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 283
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a29ac7e2d58cf4cbc87e5cdff2b77b
+      internalID: -319952226629371146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_28
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 209
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39e87f94a9641942aac1f558b637c4b
+      internalID: -7200248840880980937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 186
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8e0f7b0e22d264ab3fc8e5667c589d
+      internalID: 6869889768365641300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_30
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 229
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c473153571a5a4586ac53969c29b45
+      internalID: 6889263775518904668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_31
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 189
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839287f170f81644ab0f8bb99270a8a7
+      internalID: 5698558146125087806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_32
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 226
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c30e7fc3444ad6408f012afc5dad432
+      internalID: 2241619815538328686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_33
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 206
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5393794006ec3648a3c5b3be4adc2ba
+      internalID: -3904716846335278874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_34
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 193
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d995407da58c143809fbb71ce4fb38
+      internalID: -4998786336242448310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_35
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 203
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a527a49762de542b89f4cb7f0c74d2
+      internalID: -4898464798531990896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_36
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 178
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066290d65d0b02449bdcb5b3b7930fad
+      internalID: -908406488598457351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_37
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 180
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b63d9463ac8a143ad40f56c6deb178
+      internalID: 4781668473015694883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_38
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 193
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba31ac43bb865d749b4bd9cde6b1c4a2
+      internalID: -6963727217827705003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_39
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 188
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cb1f0dd9c92d0409d7f5e0788666c1
+      internalID: 6535566221733422412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_40
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 158
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822813ad4f900644b909562ff01fc19f
+      internalID: 6554824052745674617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_41
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 181
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fa91edccc23e148abd7462e2887bd9
+      internalID: -1020196035494880250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_42
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 167
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffdd7f7db3404647a5def87b6c260c0
+      internalID: -913519826476978348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_43
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 157
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c32959b954d96946957802795005c4b
+      internalID: 7261812868802757220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_44
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 151
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f242e7be4ab253b459b741367d80592c
+      internalID: -7849025312524534119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_45
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 151
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89273ac028f3836459050ec214ecf8b7
+      internalID: 7999000289446391755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_46
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 156
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78e65d972617b34caf2677065a79d01
+      internalID: 5808304413871524644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_47
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 158
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03007ac76c3f4c442a565c0cab0a3791
+      internalID: 1539954716225859240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_48
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 161
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7b4ae5200d802409891a2f9c43c168
+      internalID: 5261167326503028542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_49
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 165
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44623b84ffd36e45a0b452e45d87c68
+      internalID: -3780795890063138774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_50
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 151
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f0627034d2500419a508efa10ae325
+      internalID: 5498456657981368198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_51
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 148
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd22b2d7d5f66142b31a2b3710408e8
+      internalID: 7306483211035841212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_52
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 154
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e1a8f7cbf10a84786f7c54dbf704d7
+      internalID: 1908950833318137640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_53
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 114
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35baba0a74dc37a4aa2fb3cd8df3134a
+      internalID: -2917172450124375471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_54
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 146
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870fbdea6553fab47a8d2ae86ad5a6cd
+      internalID: 7438255057431503005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_55
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 59
+        width: 47
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e3fbb448adf194d83c3560d099b96d
+      internalID: -4921348096831028525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_56
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 58
+        width: 37
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecff87d46c345a419dcfea4809e156e
+      internalID: -3006688517139901082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_57
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 72
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05723d9ebd95a94b843d38ed5dbab3e
+      internalID: 2794067171174865338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_58
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 10
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c304f79eac1c5f04d9770ba815153724
+      internalID: 4253659099195219317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_59
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 31
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50980fc19e9f41478880f7e0f1d6556
+      internalID: -360426538883189726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentinela_60
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 32
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b898dda37424874dae44de08ba4c915
+      internalID: -8054100453992214951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
