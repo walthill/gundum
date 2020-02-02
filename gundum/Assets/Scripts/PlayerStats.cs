@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
 {
     [SerializeField] int currentHealth = 100; //player can take 4 hits
     [SerializeField] int maxHealth = 100; //player can take 4 hits
-    [SerializeField] int damageValue = 25;
+    [SerializeField] int damageValue = 5;
     [SerializeField] int scrap = 0, maxScrap = 50;   //currency
     [SerializeField] int missles = 1; //missle to load into weapon system. can only carry one
     public Text healthText, scrapText, missilesText;
@@ -47,8 +47,11 @@ public class PlayerStats : MonoBehaviour
 
     public void PickUpScrap(int amt)
     {
-        scrap += amt;
-        UpdateUI();
+        if (scrap < maxScrap)
+        {
+            scrap += amt;
+            UpdateUI();
+        }
     }
 
     public int SpendScrap(int amt)
