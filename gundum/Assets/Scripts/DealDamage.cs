@@ -12,6 +12,8 @@ public class DealDamage : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerStats>().TakeDamage();
 
+            gameObject.GetComponent<Collider2D>().enabled = false;
+
             if (destroySelf)
             {
                 GetComponentInParent<ChaseEnemySpawner>().SpawnNewObject();
