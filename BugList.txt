@@ -1,1 +1,0 @@
--Bullet continuously deals damage as it fades away so you can die in one shot
