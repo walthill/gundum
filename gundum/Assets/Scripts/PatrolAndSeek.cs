@@ -54,7 +54,6 @@ public class PatrolAndSeek : MonoBehaviour
     void Update()
     {
         Vector3 diff = chaseData.target.position - transform.position;
-        Debug.Log(diff.magnitude);
 
         if (diff.magnitude < chaseData.chaseRadius)
         {

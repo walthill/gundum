@@ -56,7 +56,6 @@ public class PatrolAndShoot : MonoBehaviour
     void Update()
     {
         Vector3 diff = shootingData.target.position - transform.position;
-        Debug.Log(diff.magnitude);
 
         if (diff.magnitude < shootingData.shotRadius)
         {

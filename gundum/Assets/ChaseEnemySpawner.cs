@@ -39,7 +39,10 @@ public class ChaseEnemySpawner : MonoBehaviour
             Vector2 pos = new Vector2(xPos, yPos);
 
             if (enemyObj == null)
+            {
+                Debug.Log("PUT WARNING HERE");
                 enemyObj = Instantiate(enemySpritePrefab, pos, transform.rotation, gameObject.transform) as GameObject;
+            }
         }
     }
 }
