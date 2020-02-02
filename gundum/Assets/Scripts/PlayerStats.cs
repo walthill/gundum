@@ -50,10 +50,15 @@ public class PlayerStats : MonoBehaviour
             missles -= 1;
     }
 
-    public void PickUpMissile()
+    public bool PickUpMissile()
     {
         if (missles == 0)
+        {
             missles += 1;
+            return true;
+        }
+
+        return false;
     }
 
     void GameOver()

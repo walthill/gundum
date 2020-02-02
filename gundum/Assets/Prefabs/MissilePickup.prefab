@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6574351352653448204}
   - component: {fileID: 6574351352653448207}
   m_Layer: 0
-  m_Name: MisslePickup
+  m_Name: MissilePickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
