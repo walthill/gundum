@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -22,8 +23,11 @@ public class PlayerMovement : MonoBehaviour
         JUMP = GetComponent<Jump>();
     }
 
-private void Update()
+    private void Update()
     {
+        if (Input.GetButtonDown("StartButton"))
+            SceneManager.LoadScene("main");
+
         CheckInput();
         Move();
     }

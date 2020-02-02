@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ComponentStatusScr : MonoBehaviour
@@ -144,7 +145,13 @@ public class ComponentStatusScr : MonoBehaviour
         checkSystemFailure(Tar);
         StartCoroutine(waitToMakeDamageNumberDisapear(3, Tar));
 
-
+        if(compSliders[0].value <= 0)
+        {
+            //shake the fucking camera
+            Camera.main.GetComponent<ShakeCamera>().AddTrauma(5f, 1f);
+            StartCoroutine(waitToEnd(4));
+        }
+            
     }
 
     void checkSystemFailure(int sliderIndex)
@@ -210,6 +217,13 @@ public class ComponentStatusScr : MonoBehaviour
     public void LoadMissile()
     {
         GetComponent<WeaponsSystemScr>().RestockAmmo(1);
+    }
+
+    IEnumerator waitToEnd(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        //damageRecieved.text = "";
+        SceneManager.LoadScene("end");
     }
 
     //starts decay timer
