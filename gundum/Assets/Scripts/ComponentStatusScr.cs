@@ -157,6 +157,10 @@ public class ComponentStatusScr : MonoBehaviour
             StartCoroutine(waitToMakeGameobject(5, SysFailWarnings[3]));
         }
     }
+    public void RepairSound()
+    {
+        MAS.PlayWarningSound(3);//this is awful and I feel bad
+    }
 
     public int repair(int SliderIndex, float repairAmount)
     {
@@ -171,6 +175,7 @@ public class ComponentStatusScr : MonoBehaviour
             Debug.Log("reparing:" + repairAmount);
 
             return 0;
+            
         }
 
         return 1;
