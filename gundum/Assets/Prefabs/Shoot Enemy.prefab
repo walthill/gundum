@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5243776677948054900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.9, y: -1.04, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5243776678828213063}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5243776678301652774}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.94, y: -1.09, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5243776678828213063}
@@ -91,9 +91,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5243776678449033758}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.85, y: -0.87, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 5243776678828213063}
   m_RootOrder: 0
@@ -136,8 +136,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 721ee5f1209ecac42a1bacdb5cf826c8, type: 3}
-  m_Color: {r: 0.8980392, g: 0.07058823, b: 0.8625407, a: 1}
+  m_Sprite: {fileID: 1868417282287260892, guid: 0875e9846c614c142a823895d459b721,
+    type: 3}
+  m_Color: {r: 0.9622642, g: 0.41304737, b: 0.5170346, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -164,14 +165,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.13, y: 0.22}
     newSize: {x: 11.52, y: 6.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.13, y: 0.22}
   m_EdgeRadius: 0
 --- !u!50 &5243776678449033754
 Rigidbody2D:
@@ -193,7 +194,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5243776678449033752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +210,7 @@ MonoBehaviour:
   state: 0
   patrolData:
     smoothArrival: 0
-    patrolSpeed: 1
+    patrolSpeed: 0.2
     waitTime: 2.5
     slowRadius: 0.5
     maxAccel: 0.25
@@ -219,7 +220,7 @@ MonoBehaviour:
     target: {fileID: 0}
     bulletSpeed: 1.75
     fireRate: 2
-    shotRadius: 14
+    shotRadius: 8
     waitTime: 2.5
 --- !u!114 &283232432
 MonoBehaviour:

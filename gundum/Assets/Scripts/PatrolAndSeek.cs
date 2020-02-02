@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum EnemyState { NULL = -1, PATROL, CHASE, SEEK }
+public enum EnemyState { NULL = -1, PATROL, CHASE, SHOOT }
 
 public class PatrolAndSeek : MonoBehaviour
 {
@@ -18,9 +18,11 @@ public class PatrolAndSeek : MonoBehaviour
     const float TIME_TO_TARGET = 0.1f;
     const float TARGET_RADIUS = 0.5f;
 
-    // Use this for initialization
     void Start()
     {
+        if (chaseData.target == null)
+            chaseData.target = GameObject.FindGameObjectWithTag("Player").transform;
+
         rb = GetComponent<Rigidbody2D>();
 
         InitEnemyPatrol();
