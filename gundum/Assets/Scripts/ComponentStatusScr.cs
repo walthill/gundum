@@ -158,14 +158,22 @@ public class ComponentStatusScr : MonoBehaviour
         }
     }
 
-    public void repair(int SliderIndex,float repairAmount)
+    public int repair(int SliderIndex, float repairAmount)
     {
-        //increase slider val
-        compSliders[SliderIndex].value += repairAmount;
-        //display repair text
-        repairIndicatorText[SliderIndex].text = "+" + repairAmount;
-        //disapearText
-        StartCoroutine(waitToMakeRepairNumberDisapear(.1f, SliderIndex));
+        if (compSliders[SliderIndex].value < compSliders[SliderIndex].maxValue)
+        {
+            //increase slider val
+            compSliders[SliderIndex].value += repairAmount;
+            //display repair text
+            repairIndicatorText[SliderIndex].text = "+" + repairAmount;
+            //disapearText
+            StartCoroutine(waitToMakeRepairNumberDisapear(.1f, SliderIndex));
+            Debug.Log("reparing:" + repairAmount);
+
+            return 0;
+        }
+
+        return 1;
     }
 
     //starts decay timer

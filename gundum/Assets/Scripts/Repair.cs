@@ -31,8 +31,7 @@ public class Repair : MonoBehaviour
     {
         if (canRepair && repairButton)
         {
-            player.GetComponent<PlayerStats>().SpendScrap(1);
-            CSS?.repair(componentIndex, 1);
+            player.GetComponent<PlayerStats>().PickUpScrap(ComponentStatusScr.COMPONENT_STATUS.repair(componentIndex, player.GetComponent<PlayerStats>().SpendScrap(1)));
         }
     }
 

@@ -780,7 +780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
+  m_Color: {r: 0.6435828, g: 0.888, b: 0.12984905, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3637,7 +3637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
+  m_Color: {r: 0.6435828, g: 0.888, b: 0.12984905, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4465,7 +4465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
+  m_Color: {r: 0.6435828, g: 0.888, b: 0.12984905, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5514,7 +5514,10 @@ MonoBehaviour:
   - {fileID: 2140235887}
   - {fileID: 1939739967}
   - {fileID: 527061872}
-  repairIndicatorText: []
+  repairIndicatorText:
+  - {fileID: 1168782166}
+  - {fileID: 301891125}
+  - {fileID: 1658324897}
   SysFailWarnings:
   - {fileID: 673057552}
   - {fileID: 2063490163}

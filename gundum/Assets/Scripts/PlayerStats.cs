@@ -33,10 +33,15 @@ public class PlayerStats : MonoBehaviour
 
     public void PickUpScrap(int amt) { scrap += amt; }
 
-    public void SpendScrap(int amt)
+    public int SpendScrap(int amt)
     {
-        if(scrap > 0)
+        if (scrap > 0)
+        {
             scrap -= amt;
+            return amt;
+        }
+
+        return 0;
     }
 
     public void LoadMissle() 
