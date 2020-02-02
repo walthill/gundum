@@ -40,7 +40,8 @@ public class ChaseEnemySpawner : MonoBehaviour
 
             if (enemyObj == null)
             {
-                Debug.Log("PUT WARNING HERE");
+                ComponentStatusScr.COMPONENT_STATUS.BeingBoarded();
+                //Debug.Log("PUT WARNING HERE");
                 enemyObj = Instantiate(enemySpritePrefab, pos, transform.rotation, gameObject.transform) as GameObject;
             }
         }
