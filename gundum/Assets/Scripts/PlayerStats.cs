@@ -28,6 +28,7 @@ public class PlayerStats : MonoBehaviour
             hasHealed = true;
         }
 
+        UpdateUI();
         return hasHealed;
     }
     public void TakeDamage()
@@ -36,6 +37,7 @@ public class PlayerStats : MonoBehaviour
         {
             StartCoroutine(HitRoutine());
             currentHealth -= damageValue;
+            UpdateUI();
         }
         if (currentHealth <= 0)
         {
@@ -43,13 +45,18 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    public void PickUpScrap(int amt) { scrap += amt; }
+    public void PickUpScrap(int amt)
+    {
+        scrap += amt;
+        UpdateUI();
+    }
 
     public int SpendScrap(int amt)
     {
         if (scrap > 0)
         {
             scrap -= amt;
+            UpdateUI();
             return amt;
         }
 
@@ -60,6 +67,7 @@ public class PlayerStats : MonoBehaviour
     {
         if(missles == 1)
             missles -= 1;
+        UpdateUI();
     }
 
     public bool PickUpMissile()
@@ -67,6 +75,7 @@ public class PlayerStats : MonoBehaviour
         if (missles == 0)
         {
             missles += 1;
+            UpdateUI();
             return true;
         }
 
@@ -80,9 +89,9 @@ public class PlayerStats : MonoBehaviour
 
     void UpdateUI()
     {
-        healthText.text = currentHealth.ToString();
-        scrapText.text = scrap.ToString();
-        missilesText.text = missles.ToString();
+        healthText.text = currentHealth.ToString() + "/100";
+        scrapText.text = scrap.ToString() + "/" + maxScrap.ToString();
+        missilesText.text = missles.ToString() + "/1";
 
     }
     IEnumerator HitRoutine()
