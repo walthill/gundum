@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -10,6 +11,12 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] int damageValue = 25;
     [SerializeField] int scrap = 0, maxScrap = 50;   //currency
     [SerializeField] int missles = 1; //missle to load into weapon system. can only carry one
+    public Text healthText, scrapText, missilesText;
+
+    private void Start()
+    {
+        UpdateUI();
+    }
 
     public bool Heal()
     {
@@ -70,12 +77,18 @@ public class PlayerStats : MonoBehaviour
     {
         SceneManager.LoadScene("end");
     }
-    
+
+    void UpdateUI()
+    {
+        healthText.text = currentHealth.ToString();
+        scrapText.text = scrap.ToString();
+        missilesText.text = missles.ToString();
+
+    }
     IEnumerator HitRoutine()
     {
         GetComponent<SpriteRenderer>().color = Color.red;  
         yield return new WaitForSeconds(0.1f);
         GetComponent<SpriteRenderer>().color = Color.white;
-
     }
 }
