@@ -14,6 +14,7 @@ public class DealDamage : MonoBehaviour
 
             if (destroySelf)
             {
+                GetComponentInParent<ChaseEnemySpawner>().SpawnNewObject();
                 Destroy(gameObject);
             }
         }
